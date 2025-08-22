@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "question": "O'zbekistonda nechta viloyat bor?",
+    "options": [
+      {
+        "answer": "0"
+      },
+      {
+        "answer": "-1"
+      },
+      {
+        "answer": "12"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Vs code uzun haqiqiy uzun nomi?",
+    "options": [
+      {
+        "answer": "Visual Studio Code"
+      },
+      {
+        "answer": "Vase vode"
+      },
+      {
+        "answer": "Terminal"
+      },
+      {
+        "answer": "Dave"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "O'zbekiston qachon mustaqil bo'lgan?",
+    "options": [
+      {
+        "answer": "1991"
+      },
+      {
+        "answer": "1000"
+      },
+      {
+        "answer": "1995"
+      },
+      {
+        "answer": "1992"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Qaysi OS yaxshi?",
+    "options": [
+      {
+        "answer": "MacOS"
+      },
+      {
+        "answer": "Windows"
+      },
+      {
+        "answer": "Linux"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Inglizchada 'oy' nima",
+    "options": [
+      {
+        "answer": "earth"
+      },
+      {
+        "answer": "Moon"
+      },
+      {
+        "answer": "Star"
+      }
+    ]
+  }
+]
