@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#app {
+    width: 100%;
+    max-width: 700px;
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+li {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.15s ease;
+    display: none;
+}
+
+li.active {
+    display: block;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+li h1 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.quest {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transition: border 0.3s ease;
+    position: relative;
+}
+
+.quest:hover {
+    border: 1px solid #000000;
+
+}
+
+.quest input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    accent-color: black;
+}
+
+.quest label {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 14px;
+    width: 100%;
+    padding-left: 35px;
+    color: black;
+}
+.quest label:checked{
+    background: #000;
+}
+.buttonOf {
+    margin-top: 25px;
+    width: 200px;
+    padding: 14px;
+    font-size: 1.1rem;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.buttonOf:hover {
+    box-shadow: 0 6px 16px rgba(70, 70, 70, 0.4) !important;
+}
+
+.buttonOf:active {
+    transform: scale(0.97);
+}
+
+.tot {
+    display: none;
+}
+.buts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+    li h1 {
+        font-size: 1.1rem;
+    }
+
+    .quest label {
+        font-size: 0.95rem;
+    }
+}
+
+#score {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.score-card {
+    // background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    animation: fadeIn 0.3s ease;
+}
+
+.score-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.score-card p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.correct {
+    background-color: rgba(0, 255, 94, 0.2);
+    border-radius: 6px;
+    padding: 2px 4px;
+    color: #22c548;
+    font-weight: 600;
+}
+
+.wrong {
+    background-color: rgba(68, 239, 68, 0.2);
+    border-radius: 6px;
+    padding: 2px 4px;
+    color: #ef4444;
+    font-weight: 600;
+}
